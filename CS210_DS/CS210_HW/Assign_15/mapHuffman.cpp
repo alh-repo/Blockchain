@@ -1,3 +1,10 @@
+/*
+Adam Hennefer
+DVC CS210
+5.24.18
+Assignment_15
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,7 +16,8 @@ public:
 	char val;
 	string code;
 	Node *left, *right;
-	Node():left(nullptr), right(nullptr), freq(0), val('_'){} };
+	Node():left(nullptr), right(nullptr), freq(0), val('_'){} 
+};
 
 class Huffman {
 	class cmp {
@@ -46,6 +54,7 @@ public:
 		}
 		root=Q.top();
 	}
+
 	void show() {
 		if(!root) return;
 		show(root, "");
@@ -56,6 +65,7 @@ public:
 			output.pop();
 		}
 	}
+
 	void show(Node* node, string coding) {
 		if (!node)  return;
 		if (node->val != '_') {
@@ -70,12 +80,14 @@ public:
 		show(node->left, coding + "0");
 		show(node->right, coding + "1");
 	}
+
 	void draw() const {
 		if(!root) return;
 		cout << endl;
 		draw(root, " ", " ", "");
 		cout << endl;
 	}
+
 	void draw(Node* treePtr, string lpad, string rpad, string coding) const {
         string pad = lpad.substr(0, lpad.size() - 1);
         if (treePtr == nullptr)	return;
