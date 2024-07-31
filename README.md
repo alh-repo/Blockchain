@@ -1,6 +1,6 @@
 Blockchain 
 
-This is a blockchain built to tokenize a Real Estate Assest and record it's 
+This is a blockchain built to tokenize a Real Estate Asset and record its 
 title history.  Following the bitcoin design this blockchain is optimized via 
 a merkle tree data structure. 
 
@@ -29,6 +29,6 @@ USAGE IN BLOCKCHAIN
 Verify Transactions: Quickly check if a transaction is part of the block.  
 Improve Security: Detect any changes to the transaction data.
 
-The applications default is for one transaction per block but it is easily 
+The application default is for one transaction per block but it is easily 
 modified to accept multiple transactions per block. 
 See code comments in Blockchain.cpp for more details.
