@@ -30,5 +30,5 @@ Verify Transactions: Quickly check if a transaction is part of the block.
 Improve Security: Detect any changes to the transaction data.
 
 The application default is for one transaction per block but it is easily 
-modified to accept multiple transactions per block. 
+modified to accept multiple transactions per block.  
 See code comments in Blockchain.cpp for more details.
